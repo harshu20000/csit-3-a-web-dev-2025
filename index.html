@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Login</title>
 </head>
-<body>
-    <h1>hello world</h1>
+<body style="
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    background-color: #fafafa; /* Instagram's light background */
+    display: flex; 
+    flex-direction: column; /* Vertically stack containers */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; /* Minimum height to cover viewport */
+    margin: 0;
+    padding: 20px; /* Thoda padding taaki edges se chipke nahi */
+    box-sizing: border-box;
+">
+
+    <div style="
+        background-color: white; 
+        border: 1px solid #dbdbdb; /* Subtle border */
+        border-radius: 1px; 
+        padding: 15px 0;
+        width: 380px; 
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 10px; /* Spacing between the two boxes */
+    ">
+        
+         <img src="instagram.jpg" alt="Instagram Logo" style="
+            height: 141px; 
+            margin: 22px auto 25px auto; 
+            display: block;
+        ">
+        <form action="#" method="POST" style="padding: 0 45px;"> 
+            <div style="margin-bottom: 8px;"> 
+                <input type="text" placeholder="Phone number, username, or email" required 
+                    style="
+                        width: 100%; 
+                        padding: 10px 10px; 
+                        border: 1px solid #dbdbdb; 
+                        border-radius: 3px; 
+                        box-sizing: border-box; 
+                        background-color: #fafafa;
+                        font-size: 13px; 
+                        line-height: 1.5; 
+                        color: #262626;
+                        outline: none; 
+                    ">
+            </div>
+
+            <div style="margin-bottom: 16px;"> 
+                <input type="password" placeholder="Password" required 
+                    style="
+                        width: 100%; 
+                        padding: 10px 10px; 
+                        border: 1px solid #dbdbdb; 
+                        border-radius: 3px; 
+                        box-sizing: border-box; 
+                        background-color: #fafafa;
+                        font-size: 13px; 
+                        line-height: 1.5;
+                        color: #262626;
+                        outline: none;
+                    ">
+            </div>
+            
+            <button type="submit" 
+                style="
+                    width: 100%; 
+                    padding: 8px 0; 
+                    background-color: #0095f6; /* Instagram Blue */
+                    color: white; 
+                    border: none; 
+                    border-radius: 8px; 
+                    font-size: 15px; 
+                    font-weight: 600;
+                    cursor: pointer;
+                    opacity: 0.7; 
+                    margin-bottom: 18px; 
+                    transition: opacity 0.3s;
+                "
+                onmouseover="this.style.opacity='1'"
+                onmouseout="this.style.opacity='0.7'"
+            >
+                Log In
+            </button>
+            
+            <div style="
+                display: flex; 
+                align-items: center; 
+                margin: 12px 0 20px 0; 
+            ">
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #dbdbdb;">
+                <p style="
+                    margin: 0 18px; 
+                    color: #8e8e8e; 
+                    font-size: 13px; 
+                    font-weight: 600;
+                ">
+                    OR
+                </p>
+                <hr style="flex-grow: 1; border: none; border-top: 1px solid #dbdbdb;">
+            </div>
+            
+            <p style="margin-top: 10px; font-size: 15px; margin-bottom: 12px;"> 
+                <a href="#" style="
+                    color: #385185; 
+                    text-decoration: none; 
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                ">
+                    <span style="font-size: 19px; margin-right: 8px;">📘</span> Log in with Facebook
+                </a>
+            </p>
+
+            <p style="margin-top: 14px; margin-bottom: 0; padding-bottom: 20px; font-size: 13px;"> 
+                <a href="forget.html" style="color: #00376b; text-decoration: none;">Forgot password?</a>
+            </p>
+        </form>
+    </div>
+
+    <div style="
+        background-color: white; 
+        border: 1px solid #dbdbdb; 
+        border-radius: 1px; 
+        width: 380px; 
+        max-width: 100%;
+        padding: 25px 0; 
+        font-size: 15px; 
+        text-align: center;
+    ">
+        Don't have an account? 
+       <a href="signup.html" style="color: #0095f6; text-decoration: none; font-weight: 600;">Sign up</a>
+    </div>
+
+    <div style="
+        margin-top: 25px; 
+        text-align: center;
+        width: 400px; 
+        max-width: 100%;
+    ">
+        <p style="font-size: 15px; color: #262626; margin-bottom: 15px;">Get the app.</p>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+            <a href="#" style="text-decoration: none;">
+                <img src="appstore.png" alt="Download on the App Store" style="height: 40px;">
+            </a>
+            <a href="signup.html" style="text-decoration: none;">
+                <img src="googleplay.png" alt="Get it on Google Play" style="height: 40px;">
+            </a>
+            </div>
+    </div>
+    
+    <footer style="
+        margin-top: 64px; 
+        width: 100%; 
+        max-width: 935px; 
+        text-align: center;
+    ">
+        </footer>
+
 </body>
 </html>
